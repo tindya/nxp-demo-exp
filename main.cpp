@@ -118,8 +118,8 @@ int main(int argc, char *argv[])
     } else {
         // Landscape orientation
         if (screen->geometry().width() < 1280 || screen->geometry().height() < 720){
-            engine.rootContext()->setContextProperty("swidth", screen->geometry().width() - 6); //Discount 6 pixels for xwayland borders
-            engine.rootContext()->setContextProperty("sheight", screen->geometry().height() - 65); //Discount 65 pixels for xwayland header and borders
+            engine.rootContext()->setContextProperty("swidth", screen->geometry().width() - 600); //Discount 6 pixels for xwayland borders
+            engine.rootContext()->setContextProperty("sheight", screen->geometry().height() - 650); //Discount 65 pixels for xwayland header and borders
         }else{
             engine.rootContext()->setContextProperty("swidth", int(screen->geometry().width()/1.5));
             engine.rootContext()->setContextProperty("sheight", int(screen->geometry().height()/1.5));
